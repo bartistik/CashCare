@@ -5,6 +5,8 @@ plugins {
 
 ext {
     material = '1.4.0'
+    coroutines_core = '1.3.8'
+    fragment_ktx = '1.3.6'
 }
 
 android {
@@ -37,4 +39,7 @@ android {
 
 dependencies {
     implementation "com.google.android.material:material:$material"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_core"
+    //Fragments
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx"
 }

@@ -1,8 +1,11 @@
-package com.alxbyd.cashcare.ui.main
+package com.alxbyd.cashcare.ui.main.view
 
 import android.os.Bundle
 import com.alxbyd.cashcare.R
 import com.alxbyd.cashcare.ui.basemvp.BaseActivity
+import com.alxbyd.cashcare.ui.main.MainContract
+import com.alxbyd.cashcare.ui.main.presenter.MainPresenter
+import com.alxbyd.cashcare.ui.main.presenter.MainRouter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : MainContract.View,

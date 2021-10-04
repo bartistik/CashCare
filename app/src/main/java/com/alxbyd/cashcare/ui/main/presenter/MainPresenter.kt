@@ -1,6 +1,7 @@
-package com.alxbyd.cashcare.ui.main
+package com.alxbyd.cashcare.ui.main.presenter
 
 import com.alxbyd.cashcare.ui.basemvp.BasePresenter
+import com.alxbyd.cashcare.ui.main.MainContract
 
 class MainPresenter(
     private val router: MainRouter

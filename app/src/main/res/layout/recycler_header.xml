@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_item_section_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recycler_section_header_height"
+    android:background="@color/light_grey"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/recycler_section_header_padding"
+    android:paddingEnd="@dimen/recycler_section_header_padding"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/recycler_text_size" />

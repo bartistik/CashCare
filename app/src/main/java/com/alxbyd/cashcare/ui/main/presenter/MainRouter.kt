@@ -1,9 +1,11 @@
-package com.alxbyd.cashcare.ui.main
+package com.alxbyd.cashcare.ui.main.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import com.alxbyd.cashcare.R
 import com.alxbyd.cashcare.ui.ComingSoonFragment
 import com.alxbyd.cashcare.ui.basemvp.BaseRouter
+import com.alxbyd.cashcare.ui.main.MainContract
+import com.alxbyd.cashcare.ui.transactions.view.TransactionsFragment
 
 class MainRouter(
     private val activity: AppCompatActivity
@@ -13,7 +15,7 @@ class MainRouter(
         activity.supportFragmentManager.beginTransaction()
             .replace(
                 R.id.fragment_container,
-                ComingSoonFragment.newInstance(activity.resources.getString(R.string.transactions)),
+                TransactionsFragment(),
                 activity.getString(R.string.transactions_screen_tag)
             )
             .commit()

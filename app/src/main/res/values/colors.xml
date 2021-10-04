@@ -4,4 +4,9 @@
     <color name="black">@android:color/black</color>
     <color name="white">@android:color/white</color>
     <color name="dark_grey">#9A000000</color>
+    <color name="light_grey">#DC979696</color>
+    <color name="red_transparent_expense">#1CFF0000</color>
+    <color name="green_transparent_income">#1C40ff00</color>
+    <color name="red_expense">@android:color/holo_red_dark</color>
+    <color name="green_income">@android:color/holo_green_dark</color>
 </resources>

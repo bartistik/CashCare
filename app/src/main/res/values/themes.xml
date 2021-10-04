@@ -3,6 +3,13 @@
     <style name="Theme.CashCare" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@android:color/white</item>
         <item name="colorPrimaryVariant">@android:color/black</item>
+        <item name="fontFamily">@font/nunito_font</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/orange</item>
     </style>
 
 </resources>

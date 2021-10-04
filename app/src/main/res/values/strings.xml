@@ -5,4 +5,8 @@
     <string name="coming_soon">Coming soon</string>
     <string name="transactions_screen_tag">Transactions screen</string>
     <string name="reports_screen_tag">Reports screen</string>
+    <string name="click_to_add_transaction">Click to add transaction</string>
+    <string name="categories">Categories</string>
+    <string name="notification">Notification</string>
+    <string name="export">Export</string>
 </resources>

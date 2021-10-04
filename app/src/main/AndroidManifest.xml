@@ -8,7 +8,7 @@
         android:theme="@style/Theme.CashCare">
 
         <activity
-            android:name="com.alxbyd.cashcare.ui.main.MainActivity"
+            android:name="com.alxbyd.cashcare.ui.main.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

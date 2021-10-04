@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.CashCare" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryVariant">@android:color/black</item>
+    </style>
+</resources>

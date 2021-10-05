@@ -3,6 +3,7 @@ package com.alxbyd.cashcare.ui.transactions.presenter
 import com.alxbyd.cashcare.repositories.TransactionsRepositoryImpl
 import com.alxbyd.cashcare.ui.basemvp.BasePresenter
 import com.alxbyd.cashcare.ui.transactions.TransactionsContract
+import com.alxbyd.cashcare.utils.dataclasses.Transaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch

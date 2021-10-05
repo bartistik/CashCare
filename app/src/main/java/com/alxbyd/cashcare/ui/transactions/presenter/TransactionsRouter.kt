@@ -6,6 +6,8 @@ import com.alxbyd.cashcare.R
 import com.alxbyd.cashcare.ui.ComingSoonFragment
 import com.alxbyd.cashcare.ui.addedittransaction.view.AddEditTransactionFragment
 import com.alxbyd.cashcare.ui.transactions.TransactionsContract
+import com.alxbyd.cashcare.ui.transactions.TransactionsContract
+import com.alxbyd.cashcare.utils.dataclasses.Transaction
 
 class TransactionsRouter(
     private val supportFragmentManager: FragmentManager,

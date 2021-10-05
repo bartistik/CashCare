@@ -36,6 +36,7 @@ class TransactionsFragment :
     private lateinit var balanceTextView: AppCompatTextView
     private lateinit var floatingActionButton: FloatingActionButton
     private lateinit var progressBar: ProgressBar
+    private lateinit var transactionAdapter: TransactionsAdapter
     private lateinit var transactionsItemDecorator: TransactionsItemDecorator
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -58,6 +59,7 @@ class TransactionsFragment :
         recyclerView = requireViewById(requireView(), R.id.transaction_rv)
         progressBar = requireViewById(requireView(), R.id.progressBar)
         balanceTextView = requireViewById(requireView(), R.id.balance_tV)
+        transactionAdapter = TransactionsAdapter(::onTransactionClickListener)
     }
 
     private fun initToolbar() {
@@ -96,7 +98,7 @@ class TransactionsFragment :
     private fun initTransactionsRecyclerView() {
         recyclerView.layoutManager =
             LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
-        recyclerView.adapter = TransactionsAdapter(::onTransactionClickListener)
+        recyclerView.adapter = transactionAdapter
     }
 
     private fun setFloatingActionButtonListener() {
@@ -106,7 +108,7 @@ class TransactionsFragment :
     }
 
     private fun onTransactionClickListener(transaction: Transaction) {
-        presenter.editTransaction(transaction)
+        presenter.editTransaction(transaction.id!!)
     }
 
     override fun showTransactions(transactions: List<Transaction>) {
@@ -116,9 +118,8 @@ class TransactionsFragment :
             resources.getDimensionPixelSize(R.dimen.recycler_section_header_height),
             resources.getDimensionPixelSize(R.dimen.recycler_item_margin),
             true,
-            getSectionCallBack(transactions)
+            getSectionCallBack(transactionAdapter.elementsList)
         )
-
         recyclerView.addItemDecoration(transactionsItemDecorator)
     }
 

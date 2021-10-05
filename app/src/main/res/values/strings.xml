@@ -9,4 +9,25 @@
     <string name="categories">Categories</string>
     <string name="notification">Notification</string>
     <string name="export">Export</string>
+    <string name="currency_sign">₴</string>
+    <string name="amount">Amount</string>
+    <string name="expense_transaction">Expense transaction</string>
+    <string name="income_transaction">Income transaction</string>
+    <string name="today">Today</string>
+    <string name="transaction_comment">Transaction comment</string>
+    <string name="save_transaction_action">Save transaction</string>
+    <string name="delete_transaction_action">Delete transaction</string>
+    <string name="title_dialog_delete_transaction">Delete transaction?</string>
+    <string name="message_dialog_cancel_delete_transaction">This action cannot be undone</string>
+    <string name="title_dialog_cancel_transaction">Cancel add transaction</string>
+    <string name="edit_transaction">Edit transaction</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="please_enter_amount_error">Please enter amount</string>
+    <string name="amount_too_long_error">Amount too long</string>
+    <string name="comment_too_long_error">Comment too long</string>
+    <string name="set_category_error">Set a category of transaction</string>
+    <string name="set_transaction_type_error">Set a transaction type</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="please_enter_correct_amount_error">Please enter correct amount</string>
 </resources>

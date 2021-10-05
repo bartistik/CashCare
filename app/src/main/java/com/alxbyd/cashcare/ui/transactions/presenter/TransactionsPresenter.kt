@@ -3,7 +3,6 @@ package com.alxbyd.cashcare.ui.transactions.presenter
 import com.alxbyd.cashcare.repositories.TransactionsRepositoryImpl
 import com.alxbyd.cashcare.ui.basemvp.BasePresenter
 import com.alxbyd.cashcare.ui.transactions.TransactionsContract
-import com.alxbyd.cashcare.utils.dataclasses.Transaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
@@ -14,8 +13,8 @@ class TransactionsPresenter(
 ) : TransactionsContract.Presenter,
     BasePresenter<TransactionsContract.View>() {
 
-    override fun editTransaction(transaction: Transaction) {
-        router.showAddEditTransactionScreen(transaction)
+    override fun editTransaction(idTransaction: Int) {
+        router.showAddEditTransactionScreen(idTransaction)
     }
 
     override fun handleClickOnAddTransaction() {
@@ -40,6 +39,8 @@ class TransactionsPresenter(
                 view?.showProgress(false)
             }
         }
+        //Need to change dispatcher to Main, but recyclerHeader not works.
+        //Fix header and change dispatcher
         presenterScope?.launch(Dispatchers.IO) {
             transactionsRepository.transactionsStateFlow.collect { transactions ->
                 view?.showTransactions(transactions.sortedByDescending { it.date })

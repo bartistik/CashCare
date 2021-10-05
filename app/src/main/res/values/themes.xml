@@ -3,13 +3,24 @@
     <style name="Theme.CashCare" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@android:color/white</item>
         <item name="colorPrimaryVariant">@android:color/black</item>
+        <item name="android:colorBackground">@color/white</item>
         <item name="fontFamily">@font/nunito_font</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
     </style>
 
     <style name="Toolbar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">@color/orange</item>
+    </style>
+
+    <style name="SuffixAmountTextInput" parent="Base.TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/orange</item>
     </style>
 
 </resources>

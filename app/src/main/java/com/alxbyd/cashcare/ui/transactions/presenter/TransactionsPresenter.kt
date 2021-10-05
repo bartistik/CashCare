@@ -14,8 +14,8 @@ class TransactionsPresenter(
 ) : TransactionsContract.Presenter,
     BasePresenter<TransactionsContract.View>() {
 
-    override fun editTransaction(transaction: Transaction) {
-        router.showAddEditTransactionScreen(transaction)
+    override fun editTransaction(idTransaction: Int) {
+        router.showAddEditTransactionScreen(idTransaction)
     }
 
     override fun handleClickOnAddTransaction() {
@@ -40,6 +40,8 @@ class TransactionsPresenter(
                 view?.showProgress(false)
             }
         }
+        //Need to change dispatcher to Main, but recyclerHeader not works.
+        //Fix header and change dispatcher
         presenterScope?.launch(Dispatchers.IO) {
             transactionsRepository.transactionsStateFlow.collect { transactions ->
                 view?.showTransactions(transactions.sortedByDescending { it.date })

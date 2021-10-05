@@ -8,7 +8,7 @@ interface TransactionsContract {
 
     interface Presenter : BaseContract.Presenter<View> {
         fun onFirstAttach()
-        fun editTransaction(transaction: Transaction)
+        fun editTransaction(idTransaction: Int)
         fun handleClickOnAddTransaction()
         fun handleClickOnCategories()
         fun handleClickOnNotification()
@@ -21,7 +21,7 @@ interface TransactionsContract {
     }
 
     interface Router : BaseContract.Router {
-        fun showAddEditTransactionScreen(transaction: Transaction?)
+        fun showAddEditTransactionScreen(idTransaction: Int?)
         fun showCategoriesScreen()
     }
 

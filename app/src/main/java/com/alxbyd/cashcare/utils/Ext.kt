@@ -24,4 +24,8 @@ object Ext {
         return "$sign %.${2}f ₴".format(this)
     }
 
+    fun Double.toFormatCurrentTransactionAmount(): String {
+        return "%.${2}f".format(this)
+    }
+
 }

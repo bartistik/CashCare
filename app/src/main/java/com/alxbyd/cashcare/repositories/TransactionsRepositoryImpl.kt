@@ -90,6 +90,11 @@ object TransactionsRepositoryImpl : TransactionRepository {
     }
 
     @Throws(NoSuchTransactionException::class)
+    override suspend fun deleteTransaction(idTransaction: Int) {
+        val newTransactions = mutableListOf<Transaction>()
+        val transaction =
+            transactionsMutableStateFlow.value[idTransaction]
+
     override suspend fun deleteTransaction(transaction: Transaction) {
         val newTransactions = mutableListOf<Transaction>()
 

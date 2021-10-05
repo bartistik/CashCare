@@ -3,6 +3,7 @@ package com.alxbyd.cashcare.ui.basemvp
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.LayoutRes
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
@@ -18,6 +19,7 @@ abstract class BaseFragment<V, P>(@LayoutRes layoutId: Int) :
 
     protected lateinit var toolbar: Toolbar
     protected lateinit var presenter: P
+    protected lateinit var actionBar: ActionBar
 
     protected abstract fun createPresenter(): P
 
@@ -28,6 +30,7 @@ abstract class BaseFragment<V, P>(@LayoutRes layoutId: Int) :
 
         toolbar = ViewCompat.requireViewById(requireView(), R.id.toolbar)
         (activity as AppCompatActivity).setSupportActionBar(toolbar)
+        actionBar = (activity as AppCompatActivity).supportActionBar!!
     }
 
     override fun onDestroy() {

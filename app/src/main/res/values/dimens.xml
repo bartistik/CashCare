@@ -5,9 +5,20 @@
     <dimen name="balance_text_size">24sp</dimen>
     <dimen name="elements_transactions_screen_margin">24dp</dimen>
     <dimen name="recycler_item_margin">4dp</dimen>
+    <dimen name="recycler_item_padding">4dp</dimen>
     <dimen name="recycler_text_size">16sp</dimen>
     <dimen name="recycler_section_header_height">24dp</dimen>
     <dimen name="recycler_section_header_padding">18dp</dimen>
     <dimen name="recycler_holder_amount_text_size">18sp</dimen>
     <dimen name="recycler_holder_padding">16dp</dimen>
+    <dimen name="recycler_corner_radius">12dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="transaction_type_button_width_height">72dp</dimen>
+    <dimen name="transaction_type_button_margin">36dp</dimen>
+    <dimen name="edit_transaction_fragment_margin_start">24dp</dimen>
+    <dimen name="edit_transaction_fragment_margin_end">24dp</dimen>
+    <dimen name="edit_transaction_fragment_margin_top">12dp</dimen>
+    <dimen name="edit_transaction_fragment_margin_bottom">24dp</dimen>
+    <dimen name="edit_transaction_fragment_margin">24dp</dimen>
+    <dimen name="edit_transaction_fragment_amount_text_size">36sp</dimen>
 </resources>

@@ -10,7 +10,6 @@ interface AddEditTransactionContract : BaseContract {
         fun onFirstAttach()
         fun saveTransaction(transaction: Transaction)
         fun cancelChanges()
-        fun loadTransactionData()
         fun deleteTransaction()
     }
 

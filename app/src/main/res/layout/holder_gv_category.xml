@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/recycler_corner_radius">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/category_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingLeft="@dimen/recycler_holder_padding"
+        android:paddingTop="@dimen/recycler_item_padding"
+        android:paddingRight="@dimen/recycler_holder_padding"
+        android:paddingBottom="@dimen/recycler_item_padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/recycler_text_size" />
+</androidx.cardview.widget.CardView>
